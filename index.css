@@ -13,7 +13,7 @@ body {
 .ContentContainer {
     width: min(90vw, 460px);
 
-    background-color: rgb(255, 255, 255, 0.1);
+
     color: white;
 
     display: flex;
@@ -26,9 +26,7 @@ body {
 
     font-size: clamp(14px, 1.1vw, 16px);
 
-    box-shadow:
-        0 0 20px white,
-        0 10px 30px rgba(0, 150, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.15);
 
     transition: transform 0.22s cubic-bezier(.2,.9,.2,1),
                 box-shadow 0.2s ease-out;
@@ -47,9 +45,8 @@ body {
 .TextContentContainer {
     width: min(90vw, 460px);
     max-height: 85vh;
-
-    background: transparent;
     color: white;
+    background: transparent;
 
     display: flex;
     flex-direction: column;
@@ -129,6 +126,8 @@ body {
 .MediaLinksContainer {
     display: flex;
     gap: 1em;
+    align-items: center;
+    flex-direction: row;
 
     background: transparent;
     color: white;
@@ -158,4 +157,47 @@ body {
 .ContentContainer a:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+.MediaLinkText {
+    margin: 0;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 600;
+}
+
+.MediaLinkImage {
+    width: clamp(50px, 12vw, 70px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 18px;
+    flex-shrink: 0;
+}
+
+
+
+.MediaLink {
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: clamp(12px, 2vw, 16px);
+
+    border: none;
+    border-radius: 20px;
+
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.MediaLink:hover{
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 20px rgba(255,0,0,.25),
+        0 15px 35px rgba(255,0,0,.35);
 }
