@@ -27,7 +27,7 @@ body {
     font-size: clamp(14px, 1.1vw, 16px);
 
     box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.1),
+        0 0 20px white,
         0 10px 30px rgba(0, 150, 255, 0.3);
 
     transition: transform 0.22s cubic-bezier(.2,.9,.2,1),
@@ -61,10 +61,7 @@ body {
 
     font-size: clamp(14px, 1.1vw, 16px);
 
-    box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.1),
-        0 10px 30px rgba(0, 150, 255, 0.3);
-
+    
     transition: transform 0.22s cubic-bezier(.2,.9,.2,1),
                 box-shadow 0.2s ease-out;
 
@@ -133,21 +130,22 @@ body {
     display: flex;
     gap: 1em;
 
-    background-color: rgba(185, 173, 173, 0.089);
+    background: transparent;
+    color: white;
     padding: 0.8em 1.2em;
     border-radius: 20px;
     margin-top: 3em;
 
-    box-shadow:
-        0 0 20px rgba(255, 255, 255, 0.1),
-        0 10px 30px rgba(0, 150, 255, 0.3);
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .MediaLinksContainer:hover {
     transform: translateY(-5px);
     background-color: rgba(0, 0, 0, 0.35);
-    box-shadow: 0 15px 25px rgba(94, 94, 94, 0.4);
+    box-shadow:
+        0 0 24px rgba(255, 255, 255, 0.1),
+        0 12px 30px rgba(255, 0, 0, 0.45);
 }
 
 .ContentContainer a {
