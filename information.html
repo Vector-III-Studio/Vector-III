@@ -1,49 +1,50 @@
+<!doctype html>
+<html lang="fr">
 <head>
-	<link rel="icon" class="ImageDeProfile" href="assets/icon.png">
-    <meta charset="UTF-8" />
-    <title>Vector III Studio</title>
-    <link rel="stylesheet" href="information.css" />
-	<meta name="description" content="Vector III Studio">
-
-	<meta name="author" content="Vector III">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta property="og:title" content="Vector III Studio">
-	<meta property="og:description" content="Video Game Studio">
-	<meta property="og:image" content="assets/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvre l'histoire et la vision de Vector III Studio.">
+    <meta name="theme-color" content="#151518">
+    <meta property="og:title" content="À propos — Vector III Studio">
+    <meta property="og:description" content="Découvre l'histoire et la vision de Vector III Studio.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vector-iii-studio.github.io/Vector-III/assets/icon.png">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="information.css">
+    <title>À propos — Vector III Studio</title>
 </head>
-<body>
-	<button class="back-button" onclick="window.location.href='index.html'">Retour</button>
-	<div class="video-background">
-        <video
-    		id="backgroundVideo"
-    		autoplay
-    		muted
-    		loop
-    		playsinline
-    		class="video-background">
-    		<source src="https://github.com/Vector-III-Studio/Vector-III/raw/refs/heads/main/video.mp4" type="video/mp4">
-		</video>
-
+<body class="information-page">
+    <div class="video-background" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
-    <div class="ContentContainer">
-		
-        <p class="TextContentContainer">
-		    Salut, moi c'est <a href="https://fofeolvr.github.io/Fofeo/">Fofeo</a>. J'ai 15 ans et je suis passionné par la programmation de jeux vidéo.
-			Il y a quelques années, deux amis que j'avais rencontrés lors d'une Game Jam et moi rêvions de créer notre propre studio de jeux vidéo. Malheureusement, les choses ne se sont pas passées comme prévu, et je ne peux pas révéler le nom de ce projet. Mais ce rêve ne m'a jamais quitté.
-			Aujourd'hui, je suis fier de vous présenter mon nouveau projet : Vector III Studio. <br><br>
-			Vector III Studio est né dans ma tête suite à, je vous l’avoue, un besoin d’argent, tout d’abord pour assurer mes études mais aussi pour financer ma licence de pilote privée (PPL).  
-			Alors, laissez-moi vous le présenter.
-			J'ai passé trois jours à chercher un nom, jusqu'au moment où j'ai eu le déclic. C'est en réalité une référence à un concept de programmation. En développement 3D, un Vector3 est un type de donnée qui stocke trois valeurs : X, Y et Z. C'est l'un des concepts les plus fondamentaux du développement de jeux vidéo.
-			Mais pour moi, le III a aussi une autre signification. Il représente les trois piliers de Vector III Studio : la Créativité, l'Originalité et la Passion.
-			C'est d'ailleurs pour cette raison que notre logo représente le V de Vector accompagné de trois barres verticales, chacune symbolisant l'une de ces valeurs fondamentales.
-			<br><br>Vector III Studio recrute !
-			Que vous débutiez dans le développement de jeux vidéo ou que vous soyez déjà expérimenté, vous êtes les bienvenus.
-			Comme je suis encore mineur, je ne peux malheureusement pas proposer de rémunération au départ. Pour l'instant, il s'agit avant tout d'un projet passion, construit par des personnes qui aiment simplement créer des jeux.
-			En revanche, si l'un de nos jeux génère des revenus à l'avenir, ils seront répartis équitablement entre toutes les personnes ayant contribué au projet.
-			Si vous êtes passionné par le développement de jeux vidéo et que vous avez envie de construire quelque chose ensemble, ce sera un plaisir de vous accueillir dans l'équipe.
-		</p>
 
-	</div>
+    <main class="information-layout">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Retour</a>
+
+        <article class="information-card">
+            <p class="overline">À PROPOS</p>
+            <h1>Vector III Studio</h1>
+
+            <p>Salut, moi c'est <a href="https://fofeolvr.github.io/Fofeo/" target="_blank" rel="noopener noreferrer">Fofeo</a>. Je suis passionné par la programmation, la 3D et le développement de jeux vidéo.</p>
+
+            <p>Il y a quelques années, l'idée de créer un studio de jeux vidéo est née avec des amis rencontrés lors d'une Game Jam. Même si ce premier projet n'a pas pu continuer, l'envie de construire quelque chose n'est jamais partie.</p>
+
+            <p>Aujourd'hui, Vector III Studio est un nouveau départ. C'est un projet indépendant pensé pour créer des jeux PC ambitieux, apprendre en construisant et, petit à petit, former une vraie équipe.</p>
+
+            <h2>Pourquoi « Vector III »&nbsp;?</h2>
+
+            <p>Le nom fait référence au <strong>Vector3</strong>, une donnée fondamentale en 3D qui contient les axes X, Y et Z. Les trois barres du logo représentent aussi les valeurs qui guident le studio&nbsp;: la <strong>Créativité</strong>, l'<strong>Originalité</strong> et la <strong>Passion</strong>.</p>
+
+            <h2 id="rejoindre">Rejoindre l'aventure</h2>
+
+            <p>Tu aimes le développement de jeux, la programmation, la 3D, l'animation, la musique, les VFX ou le game design&nbsp;? Vector III Studio est ouvert aux personnes motivées qui ont envie d'apprendre et de créer ensemble.</p>
+
+            <p class="note">Le studio est actuellement un projet passion. Il n'y a pas de rémunération au départ, mais toute future collaboration devra rester claire et équitable pour les personnes impliquées.</p>
+
+            <a class="primary-link" href="https://www.youtube.com/channel/UCiiETFNxpJYgZp_9bltCbaQ" target="_blank" rel="noopener noreferrer">Suivre sur YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+    </main>
 </body>
+</html>

@@ -1,51 +1,45 @@
+<!doctype html>
+<html lang="fr">
 <head>
-	<link rel="icon" class="ImageDeProfile" href="assets/icon.png">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vector III Studio, un studio indépendant de jeux PC.">
+    <meta name="theme-color" content="#151518">
+    <meta property="og:title" content="Vector III Studio">
+    <meta property="og:description" content="Créativité, originalité et passion au service de jeux PC.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vector-iii-studio.github.io/Vector-III/assets/icon.png">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
     <title>Vector III Studio</title>
-    <link rel="stylesheet" href="index.css" />
-	<meta name="description" content="Vector III Studio">
-
-	<meta name="author" content="Vector III">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta property="og:title" content="Vector III Studio">
-	<meta property="og:description" content="Video Game Studio">
-	<meta property="og:image" content="assets/icon.png">
 </head>
 <body>
-	<div class="video-background">
-        <video
-    		id="backgroundVideo"
-    		autoplay
-    		muted
-    		loop
-    		playsinline
-    		class="video-background">
-    		<source src="https://github.com/Vector-III-Studio/Vector-III/raw/refs/heads/main/video.mp4" type="video/mp4">
-		</video>
-
+    <div class="video-background" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
-    <div class="ContentContainer">
-		
-    		<button class="TextContentContainer" onclick="window.location.href='information.html'">
-        		Welcome to <strong>Vector III Studio</strong>Vector III Studio is a video game studio that creates games for PC. Created by
-        		Fofeo, it currently has only 1 member. We are currently working on our first game, which will be released in the near future.
-        		Stay tuned for more information!
-    		</button>
-		
 
-		<div class="MediaLinksContainer">
-			<button class="MediaLink" onclick="window.location.href='https://fofeolvr.github.io/Fofeo/'">
-				<img src="https://yt3.ggpht.com/Z0gPjh12EOnHh9ZSsOLAMDRa6iaXW2LYtFjzxXviwWjEH93OK6IkGLs1DIuQ9kTDoZQoRUZh=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="YouTube Logo" class="MediaLinkImage" />
-				
-			</button>
-			<button class="MediaLink" onclick="window.location.href='https://www.youtube.com/channel/UCiiETFNxpJYgZp_9bltCbaQ'">
-				<img src="assets/youtube.png" alt="YouTube Logo" class="MediaLinkImage" />
-				
-			</button>
+    <main class="landing-page">
+        <section class="content-card" aria-labelledby="page-title">
+            <img class="studio-icon" src="assets/icon.png" alt="">
+            <p class="overline">INDIE GAME STUDIO</p>
+            <h1 id="page-title">Vector III Studio</h1>
+            <p class="intro">Un studio indépendant qui crée des jeux PC avec créativité, originalité et passion.</p>
+            <p class="description">Le premier projet est actuellement en développement. L'objectif est simple&nbsp;: créer des expériences dont on se souvient.</p>
 
-			
-		</div>
-	</div>
+            <div class="actions">
+                <a class="primary-link" href="information.html">Découvrir le studio <span aria-hidden="true">→</span></a>
+                <a class="secondary-link" href="projects.html">Voir les projets <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="social-links" aria-label="Liens externes">
+                <a href="https://fofeolvr.github.io/Fofeo/" target="_blank" rel="noopener noreferrer">Fofeo <span aria-hidden="true">↗</span></a>
+                <a class="youtube-link" href="https://www.youtube.com/channel/UCiiETFNxpJYgZp_9bltCbaQ" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/youtube.png" alt=""> YouTube <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
+</html>
